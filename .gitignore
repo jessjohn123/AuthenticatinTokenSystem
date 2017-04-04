@@ -1,19 +1,29 @@
-# Build and Release Folders
-bin/
-bin-debug/
-bin-release/
-[Oo]bj/ # FlashDevelop obj
-[Bb]in/ # FlashDevelop bin
-
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+*.sw* 
+2 *~ 
+3 
+ 
+4 # Logs and databases # 
+5 ###################### 
+6 *.log 
+7 
+ 
+8 # OS generated files # 
+9 ###################### 
+10 .DS_Store 
+11 .DS_Store? 
+12 ._* 
+13 .Spotlight-V100 
+14 .Trashes 
+15 Icon? 
+16 ehthumbs.db 
+17 Thumbs.db 
+18 
+ 
+19 node_modules/ 
+20 .sass-cache/ 
+21 public/stylesheets/*.css 
+22 public/min/ 
+23 public/index.html 
+24 vendor/*
+ 
+25 public/fonts 
