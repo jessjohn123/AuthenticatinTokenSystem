@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
 
   onLoginSubmit(){
     //console.log(this.username);
-    const user ={
+    const user = {
       username: this.username,
       password: this.password
     }
@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
       {
           this.authService.storeUserData(data.token, data.user);
           //this.flashMessage.show('You are now logged in', {cssClass: 'alert-success', timeout: 5000});            
-          console.log(data.msg);            
+          console.log('You are now logged in');            
           this.router.navigate(['dashboard']);
       }else{
           //this.flashMessage.show(data.msg, {cssClass: 'alert-danger', timeout: 5000});            

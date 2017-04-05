@@ -46,7 +46,11 @@ app.use('/users', users);
 //Index Route 
 app.get('/', (req, res) => {
     res.send('Invalid Endpoint');
-})
+});
+
+app.get('*', () =>{
+    res.sendFile(path.join(__dirname, 'public/index.html'));
+});
 
 //Setting up the port 
 const port = 3000;
